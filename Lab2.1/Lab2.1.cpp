@@ -5,7 +5,7 @@
 // < Ференчук Ярослав >
 // Лабораторна робота № 2.1
 // Лінійні програми.
-// Варіант 0.9
+// Варіант 18
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -13,13 +13,11 @@ using namespace std;
 int main()
 {
 	double a; // вхідний параметр
-	double b; // вхідний параметр
 	double z1; // результат обчислення 1-го виразу
 	double z2; // результат обчислення 2-го виразу
 	cout << "a = "; cin >> a;
-	cout << "b = "; cin >> b;
-	z1 = ((cos(a) - cos(b))*(cos(a) - cos(b))) - ((sin(a) - sin(b))* (sin(a) - sin(b)));
-	z2 = -4 * (sin((a - b) / 2)* sin((a - b) / 2)) * cos(a + b);
+	z1 = ((a+2)/sqrt(2*a)-(a/(sqrt(2*a)+2))+2/(a-sqrt(2*a)))*((sqrt(a)-sqrt(2))/(a+2));
+	z2 = 1/(sqrt(a)+sqrt(2));
 	cout << endl;
 	cout << "z1 = " << z1 << endl;
 	cout << "z2 = " << z2 << endl;
